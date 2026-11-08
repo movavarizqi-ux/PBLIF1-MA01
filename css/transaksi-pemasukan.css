@@ -1,0 +1,232 @@
+/* PENGATURAN DASAR */
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F1F5F9;
+}
+
+/* HEADER */
+header {
+    background-color: #1D4ED8;
+    color: white;
+    height: 60px;
+    padding: 17px 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 230px;
+    height: calc(100vh - 60px);
+    background-color: #F1F5F9;
+    border-right: 1px solid #CBD5E1;
+    position: fixed;
+    padding: 30px 12px;
+}
+
+aside a {
+    display: block;
+    text-decoration: none;
+    color: #1E293B;
+    background-color: #F8FAFC;
+    border: 1px solid #DCE3ED;
+    padding: 14px 10px;
+    margin-bottom: 10px;
+    border-radius: 7px;
+    font-size: 14px;
+}
+
+aside a:hover {
+    background-color: #DBEAFE;
+}
+
+aside a.active {
+    background-color: #BFDBFE;
+    border-color: #93C5FD;
+    font-weight: bold;
+}
+
+/* KONTEN UTAMA */
+main {
+    margin-left: 230px;
+    padding: 25px 35px;
+    min-height: calc(100vh - 60px);
+    background-color: #F1F5F9;
+}
+
+/* PROFIL */
+.profile {
+    text-align: right;
+    color: #475569;
+    margin-bottom: 25px;
+    font-size: 14px;
+}
+
+/* JUDUL */
+main h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #0F172A;
+}
+
+main p {
+    color: #64748B;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+/* TOMBOL TAMBAH */
+.tombol-tambah {
+    display: block;
+    width: 185px;
+    padding: 13px;
+    margin: 20px 0 40px auto;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #3B82F6;
+    border-radius: 7px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.tombol-tambah:hover {
+    background-color: #BFDBFE;
+}
+
+/* TABEL */
+main > h3 {
+    font-size: 16px;
+    color: #334155;
+    margin-bottom: 18px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 45px;
+}
+
+th {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    border: 1px solid #93C5FD;
+    padding: 15px 10px;
+    font-size: 13px;
+}
+
+td {
+    border: 1px solid #CBD5E1;
+    padding: 13px 10px;
+    text-align: center;
+    font-size: 13px;
+}
+
+tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+/* TOMBOL EDIT DAN HAPUS */
+.edit {
+    background-color: transparent;
+    color: #1D4ED8;
+    border: none;
+    cursor: pointer;
+}
+
+.hapus {
+    background-color: transparent;
+    color: #DC2626;
+    border: none;
+    cursor: pointer;
+}
+
+/* FORM TRANSAKSI */
+.form-transaksi {
+    width: 100%;
+    min-height: 350px;
+    background-color: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+
+.form-transaksi h3 {
+    font-size: 20px;
+    color: #334155;
+    margin-bottom: 30px;
+}
+
+.form-transaksi label {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+
+.form-transaksi input,
+.form-transaksi select {
+    width: 100%;
+    max-width: 550px;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: white;
+}
+
+/* TOMBOL FORM */
+.tombol-simpan,
+.tombol-batal {
+    width: 140px;
+    padding: 14px;
+    margin-top: 25px;
+    margin-right: 10px;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #3B82F6;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.tombol-simpan:hover,
+.tombol-batal:hover {
+    background-color: #BFDBFE;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    .sidebar {
+        width: 170px;
+    }
+
+    main {
+        margin-left: 170px;
+        padding: 20px 15px;
+    }
+
+    table {
+        font-size: 11px;
+    }
+
+    th, td {
+        padding: 8px 5px;
+    }
+
+    .form-transaksi {
+        padding: 20px 15px;
+    }
+
+    .form-transaksi input,
+    .form-transaksi select {
+        width: 100%;
+    }
+}
+
