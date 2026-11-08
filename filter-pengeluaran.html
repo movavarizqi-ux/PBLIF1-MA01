@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Transaksi Pengeluaran</title>
+    <link rel="stylesheet" href="filter-pengeluaran.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        APLIKASI CATATAN KEUANGAN HARIAN MAHASISWA
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <aside>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="kategori-pemasukan.html">Kategori Pemasukan</a>
+            <a href="kategori-pengeluaran.html">Kategori Pengeluaran</a>
+            <a href="transaksi-pemasukan.html">Transaksi Pemasukan</a>
+            <a href="transaksi-pengeluaran.html" class="active">Transaksi Pengeluaran</a>
+            <a href="rekap-pemasukan.html">Rekapitulasi</a>
+        </aside>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <div class="profile">Mahasiswa | Profil</div>
+
+        <h2>Filter Transaksi Pengeluaran</h2>
+
+        <p>
+            Cari dan filter data berdasarkan kata kunci,
+            kategori, dan/atau periode.
+        </p>
+
+        <!-- FORM FILTER -->
+        <form id="filterForm" class="filter-container">
+
+            <div class="filter-input">
+                <label for="kataKunci">Kata kunci</label>
+                <input type="text" id="kataKunci"
+                    placeholder="Cari transaksi">
+            </div>
+
+            <div class="filter-input">
+                <label for="kategori">Kategori</label>
+                <select id="kategori">
+                    <option value="">Semua Kategori</option>
+                </select>
+            </div>
+
+            <div class="filter-input periode">
+                <label>Periode tanggal</label>
+
+                <div class="tanggal-input">
+                    <input type="date" id="tanggalAwal">
+                    <span>s.d.</span>
+                    <input type="date" id="tanggalAkhir">
+                </div>
+            </div>
+
+            <div class="tombol-filter">
+                <button type="submit">Terapkan Filter</button>
+                <button type="button" id="tombolReset">Reset</button>
+            </div>
+
+        </form>
+
+        <!-- HASIL PENCARIAN -->
+        <h3>Hasil Pencarian</h3>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Tanggal</th>
+                    <th>Kategori</th>
+                    <th>Nominal</th>
+                    <th>Keterangan</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="hasilTransaksi">
+            </tbody>
+        </table>
+
+        <!-- CATATAN -->
+        <div class="catatan">
+            Catatan: gunakan kata kunci, kategori, dan rentang tanggal
+            secara bersamaan atau terpisah.
+        </div>
+
+    </main>
+
+    <script src="filter-pengeluaran.js"></script>
+
+</body>
+</html>
