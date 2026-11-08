@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rekapitulasi Pemasukan</title>
+    <link rel="stylesheet" href="rekap-pemasukan.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        APLIKASI CATATAN KEUANGAN HARIAN MAHASISWA
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <aside>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="kategori-pemasukan.html">Kategori Pemasukan</a>
+            <a href="kategori-pengeluaran.html">Kategori Pengeluaran</a>
+            <a href="transaksi-pemasukan.html">Transaksi Pemasukan</a>
+            <a href="transaksi-pengeluaran.html">Transaksi Pengeluaran</a>
+            <a href="rekap-pemasukan.html" class="active">Rekapitulasi Pemasukan</a>
+            <a href="rekap-pengeluaran.html">Rekapitulasi Pengeluaran</a>
+        </aside>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <div class="profile">Mahasiswa | Profil</div>
+
+        <h2>Rekapitulasi Pemasukan</h2>
+        <p>Ringkasan pemasukan berdasarkan periode dan kategori.</p>
+
+        <!-- FILTER -->
+        <div class="filter-rekap">
+
+            <div>
+                <label for="periode">Periode</label>
+                <input type="month" id="periode">
+            </div>
+
+            <div>
+                <label for="kategori">Kategori</label>
+                <select id="kategori">
+                    <option value="">Semua Kategori</option>
+                </select>
+            </div>
+
+            <button type="button" id="tombolTampilkan">
+                Tampilkan
+            </button>
+
+        </div>
+
+        <!-- ISI REKAP -->
+        <div class="konten-rekap">
+
+            <!-- DIAGRAM -->
+            <div class="diagram">
+                <h3>Diagram Pemasukan Berdasarkan Kategori</h3>
+
+                <div id="isiDiagram" class="isi-diagram">
+                    <p>Belum ada data pemasukan.</p>
+                </div>
+            </div>
+
+            <!-- RINGKASAN -->
+            <div class="ringkasan">
+
+                <div class="total-pemasukan">
+                    <h4>TOTAL PEMASUKAN</h4>
+                    <h2 id="totalPemasukan">Rp 0</h2>
+                </div>
+
+                <h3>Rincian per Kategori</h3>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Kategori</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="rincianKategori">
+                    </tbody>
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="rekap-pemasukan.js"></script>
+
+</body>
+</html>
