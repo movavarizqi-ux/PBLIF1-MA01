@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        APLIKASI CATATAN KEUANGAN HARIAN MAHASISWA
+    </header>
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <aside>
+            <a href="dashboard.html" class="active">Dashboard</a>
+            <a href="kategori-pemasukan.html">Kategori Pemasukan</a>
+            <a href="kategori-pengeluaran.html">Kategori Pengeluaran</a>
+            <a href="transaksi-pemasukan.html">Transaksi Pemasukan</a>
+            <a href="transaksi-pengeluaran.html">Transaksi Pengeluaran</a>
+            <a href="rekap-pemasukan.html">Rekapitulasi Pemasukan</a>
+            <a href="rekap-pengeluaran.html">Rekapitulasi Pengeluaran</a>
+        </aside>
+    </div>
+
+    <!-- KONTEN UTAMA -->
+    <main>
+
+        <div class="profile">Mahasiswa | Profil</div>
+
+        <h2>Dashboard</h2>
+        <p>Ringkasan kondisi keuangan dan transaksi terbaru.</p>
+
+        <!-- KARTU RINGKASAN -->
+        <div class="kartu-container">
+
+            <div class="kartu pemasukan">
+                <h4>TOTAL PEMASUKAN</h4>
+                <h2 id="totalPemasukan">Rp 0</h2>
+            </div>
+
+            <div class="kartu pengeluaran">
+                <h4>TOTAL PENGELUARAN</h4>
+                <h2 id="totalPengeluaran">Rp 0</h2>
+            </div>
+
+            <div class="kartu saldo">
+                <h4>SALDO</h4>
+                <h2 id="saldo">Rp 0</h2>
+            </div>
+
+        </div>
+
+        <!-- RIWAYAT TRANSAKSI -->
+        <div class="riwayat">
+
+            <h3>Riwayat Transaksi Terbaru</h3>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tanggal</th>
+                        <th>Kategori</th>
+                        <th>Keterangan</th>
+                        <th>Jenis</th>
+                        <th>Nominal</th>
+                    </tr>
+                </thead>
+
+                <tbody id="riwayatTransaksi">
+                </tbody>
+            </table>
+
+            <div class="link-transaksi">
+                <a href="transaksi-pemasukan.html">Lihat Transaksi Pemasukan</a>
+                <a href="transaksi-pengeluaran.html">Lihat Transaksi Pengeluaran</a>
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="dashboard.js"></script>
+
+</body>
+</html>
 
