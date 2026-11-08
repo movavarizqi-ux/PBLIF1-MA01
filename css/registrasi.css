@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F1F5F9;
+    margin: 0;
+}
+
+/* Kotak Registrasi */
+.container {
+    background-color: white;
+    width: 400px;
+    height: 600px;
+    margin: 75px auto;
+    padding: 25px 50px;
+    border-radius: 10px;
+}
+
+/* Judul */
+h2 {
+    text-align: center;
+    color: #1D4ED8;
+    font-size: 22px;
+}
+
+h3 {
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Formulir */
+label {
+    display: block;
+    margin-top: 12px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Tombol */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 25px;
+    background-color: #1D4ED8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Link Login */
+p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+a {
+    color: #1D4ED8;
+    text-decoration: none;
+}
