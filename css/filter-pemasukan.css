@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #F1F5F9;
+}
+
+/* HEADER */
+header {
+    height: 60px;
+    background-color: #1D4ED8;
+    color: white;
+    padding: 17px 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* SIDEBAR */
+.sidebar {
+    width: 195px;
+    height: calc(100vh - 60px);
+    position: fixed;
+    background-color: #F1F5F9;
+    border-right: 1px solid #CBD5E1;
+    padding: 30px 12px;
+}
+
+aside a {
+    display: block;
+    text-decoration: none;
+    color: #1E293B;
+    background-color: #F8FAFC;
+    border: 1px solid #DCE3ED;
+    padding: 12px 8px;
+    margin-bottom: 9px;
+    border-radius: 6px;
+    font-size: 12px;
+}
+
+aside a:hover {
+    background-color: #DBEAFE;
+}
+
+aside a.active {
+    background-color: #BFDBFE;
+    border-color: #93C5FD;
+    font-weight: bold;
+}
+
+/* KONTEN */
+main {
+    margin-left: 195px;
+    padding: 20px 25px;
+    min-height: calc(100vh - 60px);
+    background-color: #F1F5F9;
+}
+
+.profile {
+    text-align: right;
+    font-size: 11px;
+    color: #475569;
+    margin-bottom: 8px;
+}
+
+main h2 {
+    color: #0F172A;
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+main p {
+    color: #64748B;
+    font-size: 11px;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+/* FORM FILTER */
+.filter-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 16px;
+    margin-bottom: 35px;
+    flex-wrap: wrap;
+}
+
+.filter-input {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.filter-input label {
+    font-size: 11px;
+    font-weight: bold;
+    color: #334155;
+}
+
+.filter-input input,
+.filter-input select {
+    height: 32px;
+    width: 190px;
+    padding: 7px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 10px;
+}
+
+.filter-input.periode {
+    flex: 1;
+    min-width: 210px;
+}
+
+.tanggal-input {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.tanggal-input input {
+    width: 105px;
+}
+
+.tanggal-input span {
+    font-size: 11px;
+    color: #475569;
+}
+
+/* TOMBOL FILTER */
+.tombol-filter {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.tombol-filter button {
+    width: 115px;
+    height: 32px;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #3B82F6;
+    border-radius: 6px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.tombol-filter button:hover {
+    background-color: #BFDBFE;
+}
+
+/* HASIL PENCARIAN */
+main h3 {
+    font-size: 14px;
+    color: #334155;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: #DBEAFE;
+    color: #1E40AF;
+    border: 1px solid #93C5FD;
+    padding: 13px 8px;
+    font-size: 10px;
+}
+
+td {
+    border: 1px solid #CBD5E1;
+    padding: 13px 8px;
+    text-align: center;
+    font-size: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+/* TOMBOL AKSI */
+.edit {
+    color: #1D4ED8;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+.hapus {
+    color: #DC2626;
+    border: none;
+    background: none;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+/* CATATAN */
+.catatan {
+    margin-top: 35px;
+    padding: 20px 12px;
+    background-color: #EFF6FF;
+    border: 1px solid #BFDBFE;
+    color: #1D4ED8;
+    font-size: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 850px) {
+    .sidebar {
+        width: 170px;
+    }
+
+    main {
+        margin-left: 170px;
+        padding: 20px 15px;
+    }
+
+    .filter-container {
+        align-items: stretch;
+    }
+}
