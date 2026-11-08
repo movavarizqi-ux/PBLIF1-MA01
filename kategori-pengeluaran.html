@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kategori Pengeluaran</title>
 
+    <!-- Menggunakan CSS yang sama dengan Kategori Pemasukan -->
+    <link rel="stylesheet" href="kategori-pemasukan.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        APLIKASI CATATAN KEUANGAN HARIAN MAHASISWA
+    </header>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <aside>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="kategori-pemasukan.html">Kategori Pemasukan</a>
+            <a href="kategori-pengeluaran.html" class="active">Kategori Pengeluaran</a>
+            <a href="transaksi-pemasukan.html">Transaksi Pemasukan</a>
+            <a href="transaksi-pengeluaran.html">Transaksi Pengeluaran</a>
+            <a href="rekap-pemasukan.html">Rekapitulasi Pemasukan</a>
+            <a href="rekap-pengeluaran.html">Rekapitulasi Pengeluaran</a>
+        </aside>
+    </div>
+
+    <!-- Konten utama -->
+    <main>
+        <div class="profile">Mahasiswa | Profil</div>
+
+        <h2>Kategori Pengeluaran</h2>
+        <p>Kelola daftar kategori yang digunakan dalam transaksi.</p>
+
+        <button type="button" class="tombol-tambah" onclick="bukaFormKategori()">
+            + Tambah Kategori
+        </button>
+
+        <h3>Daftar Kategori</h3>
+
+        <!-- Tabel kategori -->
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Nama Kategori</th>
+                    <th>Aksi</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+
+            <tbody id="daftarKategori">
+            </tbody>
+        </table>
+
+        <!-- Form kategori -->
+        <div class="form-kategori" id="formKategori">
+            <h3>FORM KATEGORI PENGELUARAN</h3>
+
+            <form id="kategoriForm">
+                <label>Nama Kategori</label>
+
+                <input type="text" id="namaKategori"
+                    placeholder="Contoh: Makan" required>
+
+                <button type="submit" id="tombolSimpan">
+                    Simpan
+                </button>
+
+                <button type="reset">
+                    Batal
+                </button>
+            </form>
+        </div>
+
+    </main>
+
+    <!-- JavaScript -->
+    <script src="kategori-pengeluaran.js"></script>
+
+</body>
+</html>
