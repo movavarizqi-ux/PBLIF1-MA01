@@ -1,0 +1,217 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F1F5F9;
+}
+
+/* Header */
+header {
+    height: 58px;
+    background-color: #1D4ED8;
+    color: white;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 225px;
+    height: calc(100vh - 58px);
+    background-color: #F1F5F9;
+    border-right: 1px solid #CBD5E1;
+    padding: 32px 18px;
+    float: left;
+}
+
+.sidebar a {
+    display: block;
+    padding: 12px;
+    margin-bottom: 9px;
+    text-decoration: none;
+    color: #334155;
+    background-color: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+.sidebar a.active {
+    background-color: #BFDBFE;
+    border-color: #93C5FD;
+    color: #1E3A8A;
+    font-weight: bold;
+}
+
+/* Konten utama */
+main {
+    margin-left: 225px;
+    padding: 15px 30px;
+}
+
+.profile {
+    text-align: right;
+    color: #475569;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #0F172A;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #64748B;
+    font-size: 12px;
+}
+
+/* Tombol tambah */
+.tambah {
+    float: right;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #3B82F6;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: -35px;
+}
+
+/* Tabel */
+h3 {
+    margin-top: 55px;
+    color: #334155;
+    font-size: 14px;
+}
+
+table {
+    width: 90%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+}
+
+th {
+    background-color: #DBEAFE;
+    color: #1E3A8A;
+    border: 1px solid #93C5FD;
+    padding: 13px;
+    font-size: 11px;
+}
+
+td {
+    border: 1px solid #CBD5E1;
+    padding: 13px;
+    text-align: center;
+    font-size: 12px;
+    color: #334155;
+}
+
+tr:nth-child(even) {
+    background-color: #F8FAFC;
+}
+
+/* Tombol aksi */
+.edit, .hapus {
+    padding: 6px 15px;
+    border: 1px solid #CBD5E1;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.tombol-tambah {
+    display: block;
+    width: 148px;
+    padding: 12px;
+    margin: 20px 0 10px auto;
+
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+
+    border: 1px solid #3B82F6;
+    border-radius: 6px;
+
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.tombol-tambah:hover {
+    background-color: #BFDBFE;
+}
+
+.tombol-tambah {
+    display: block;
+    width: 148px;
+    padding: 12px;
+    margin: 20px 0 10px auto;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #3B82F6;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.tombol-tambah:hover {
+    background-color: #BFDBFE;
+}
+
+
+/* FORM KATEGORI PEMASUKAN */
+.form-kategori {
+    width: 90%;
+    min-height: 230px;
+    background-color: #F8FAFC;
+    border: 1px solid #CBD5E1;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+
+.form-kategori h3 {
+    font-size: 20px;
+    color: #334155;
+    margin-bottom: 35px;
+}
+
+.form-kategori label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.form-kategori input {
+    width: 450px;
+    max-width: 100%;
+    padding: 12px;
+    border: 1px solid #CBD5E1;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+/* TOMBOL SIMPAN DAN BATAL */
+.form-kategori button {
+    width: 155px;
+    padding: 16px;
+    margin-left: 10px;
+    background-color: #DBEAFE;
+    color: #1D4ED8;
+    border: 1px solid #3B82F6;
+    border-radius: 9px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.form-kategori button:hover {
+    background-color: #BFDBFE;
+}
